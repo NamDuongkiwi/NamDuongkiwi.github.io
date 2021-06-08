@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+
+        .container{
+            background-color:pink;
+            padding-left: 0px;
+        }
+        .main {
+            background-color:pink;
+            float: left;
+            width: 100%;   
+            clear: both;  
+            display: table;
+            padding-bottom: 30px;
+        }
+
+        .row{
+            float: left;
+            width: 50%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .aside {
+            float: left;
+            background-color: #33b5e5;
+            height: 150px;
+            width: 100%;
+        }
+        .button{
+            height: 30px;
+            width: 90px;
+            background-color: #33b5e5;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        .bar{
+            float: left;
+            height: 50px;
+            width: 33.33%;
+            background-color:aquamarine;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    
+
+
+        @media screen and (max-width: 768px) {
+            .left, .main, .row {
+                width: 100%; 
+            }
+            .row{
+                padding-top: 15px;
+            }
+            .button{
+                width: 60px;
+                margin-top: 15px;
+            }
+            .bar{
+                background-color: pink;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="width: 100%;">
+            <div class = "bar">
+                <div class = "button" style="float: left"></div>
+            </div>
+            <div class = "bar">
+                <div class = "button"></div>
+            </div>
+            <div class = "bar" > 
+                <div class = "button" style="float: right;"></div>
+            </div>
+        </div>  
+
+        <div class="main">
+            <div class ="row" style="padding-top: 0px;">
+                <div class="aside"></div>
+            </div>
+            <div class = "row">
+                <div class="aside"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div>
+    <div>
+        <button type="button" onclick="window.location.href='bai1.html'">Accordion</button>
+        <button type="button" onclick="window.location.href='tab.html'">Tab</button>
+        <button type="button" id="myBtn">Show Toast</button>
+
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+            <img class="rounded me-2" alt="...">
+            <strong class="me-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+            Hello, world! This is a toast message.
+            </div>
+        </div>
+    </div>  
+    <div>
+        <button type="button" onclick="window.location.href='slide12_1.html'">Slide 12: 1</button>
+        <button type="button" onclick="window.location.href='slide12_2.html'">Slide 12: 2</button>
+        <button type="button" onclick="window.location.href='silde12_3.html'">Slide 12: 3</button>
+        <button type="button" onclick="window.location.href='slide12_4.html'">Slide 12: 4</button>
+        <button type="button" onclick="window.location.href='slide12_5.html'">Slide 12: 5</button>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#myBtn").click(function(){
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+
+
+</body>
+</html>

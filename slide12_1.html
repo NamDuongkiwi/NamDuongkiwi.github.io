@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  background-color: pink;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 25%;
+  width: 100%;
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-4 {
+    width: 33.33%;
+    background-color: aquamarine;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="row">
+  <div class="col-4">
+    <div class="aside">
+        
+      </div>
+  </div>
+
+  <div class="col-4">
+    <div class="aside">
+        
+      </div>
+  </div>
+
+  <div class="col-4">
+    <div class="aside">
+      
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-4">
+      <div class="aside">
+          
+        </div>
+    </div>
+  
+    <div class="col-4">
+      <div class="aside">
+          
+        </div>
+    </div>
+  
+    <div class="col-4">
+      <div class="aside">
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row{
+  background-color:aquamarine;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.main{
+  padding-top: 50px;
+  background-color: pink;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-4{
+  float: left;
+  width: 100%;
+  padding-top:15px;
+  padding-bottom: 15px;
+}
+
+.aside {
+  background-color: #33b5e5;
+  height: 150px;
+  width: 100%;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-4 {
+    width: 33.33%;
+    padding:15px;
+  }
+  .left{
+    padding-left: 0px;
+  }
+  .top{
+    padding-top: 0px;
+  }
+  .right{
+    padding-right: 0px;
+  }
+  .bot{
+    padding-bottom: 0px;
+  }
+  .main{
+    padding-top: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="main">
+    
+
+<div class="row">
+  <div class="col-4 left" style="padding-top: 0px;">
+    <div class="aside">
+        
+      </div>
+  </div>
+
+  <div class="col-4 top">
+    <div class="aside">
+        
+      </div>
+  </div>
+
+  <div class="col-4 right top">
+    <div class="aside">
+      
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-4 left">
+      <div class="aside">
+          
+        </div>
+    </div>
+  
+    <div class="col-4" >
+      <div class="aside">
+          
+        </div>
+    </div>
+  
+    <div class="col-4 right" >
+      <div class="aside">
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4 bot left">
+      <div class="aside">
+          
+        </div>
+    </div>
+  
+    <div class="col-4 bot">
+      <div class="aside">
+          
+        </div>
+    </div>
+  
+    <div class="col-4 bot right">
+      <div class="aside">
+        
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>

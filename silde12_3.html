@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+
+        .container{
+            padding-top: 30px;
+            background-color:pink;
+            padding-left: 0px;
+        }
+        .main {
+            background-color:pink;
+            padding-left: 15px;
+            padding-right: 15px;
+            float: left;
+            width: 66.66%;   
+            clear: both;  
+            display: table;
+        }
+
+        .right { 
+            background-color:pink;
+            padding-left: 15px;
+            padding-right: 15px;
+            float: left;
+            width: 33.33%;
+            height: 500px;
+        }
+
+        .aside {
+            float: left;
+            background-color: #33b5e5;
+            height: 150px;
+            width: 100%;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .left, .main, .right {
+                width: 100%; 
+            }
+            .right{
+                padding-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body class="container">
+
+    <div class="main">
+        <div style="width:50%; float:left; padding-right: 15px; ">
+            <div class="aside"></div>
+        </div>
+        <div style="width:50%; float:left; padding-left: 15px; padding-bottom: 15px;">
+            <div class="aside"></div>
+        </div>
+        <div style="width:50%; float:left; padding-top:15px; padding-right: 15px;">
+            <div class="aside"></div>
+        </div>
+        <div style="width:50%; float:left; padding-top:15px; padding-left: 15px;">
+            <div class="aside"></div>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="aside" style="height: 500px;"></div>
+    </div>
+
+</body>
+</html>
